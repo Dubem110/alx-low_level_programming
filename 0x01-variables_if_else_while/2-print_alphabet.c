@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
-
+#include <stdlid.h>
 /**
  * main - Entry
  * Description: prints the alphabet in lowercase\n
@@ -8,12 +7,14 @@
  */
 int main(void)
 {
-	int ch;
+	char c = 'a';
 
-	for (ch = 'a'; ch <= "z"; ch++)
+	while (c <= 'z')
 	{
-		putchar(ch);
+		putchar(c);
+		c++;
 	}
+
 	putchar('\n');
-return (0);
+	return (0);
 }
